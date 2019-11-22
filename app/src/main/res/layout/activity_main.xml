@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mtrl_card_spacing"
+            android:layout_marginTop="@dimen/mtrl_card_spacing"
+            android:layout_marginRight="@dimen/mtrl_card_spacing"
+            android:minHeight="200dp">
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                app:alignContent="space_between"
+                app:alignItems="flex_end"
+                app:flexDirection="column"
+                app:flexWrap="nowrap"
+                app:justifyContent="space_around">
+
+                <TextView
+                    android:id="@+id/calcTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fontFamily="monospace"
+                    android:paddingTop="24dp"
+                    android:text="_"
+                    android:textAlignment="textEnd"
+                    android:textSize="30sp"
+                    app:layout_flexBasisPercent="45%" />
+
+                <TextView
+                    android:id="@+id/resultView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textSize="40sp"
+                    app:layout_flexBasisPercent="45%" />
+            </com.google.android.flexbox.FlexboxLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap"
+            app:justifyContent="space_evenly">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/seven"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/height"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nine"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/del"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DEL"
+                app:backgroundTint="@color/colorAccent"
+                app:layout_flexBasisPercent="23%" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/four"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/five"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/six"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/divide"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="÷"
+                app:backgroundTint="@color/colorAccent"
+                app:layout_flexBasisPercent="23%" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/one"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/two"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/three"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/multiply"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                app:backgroundTint="@color/colorAccent"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/zeo"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dot"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=","
+                app:backgroundTint="@color/cardview_shadow_end_color"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/plus"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                app:backgroundTint="@color/colorAccent"
+                app:layout_flexBasisPercent="23%" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/less"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:backgroundTint="@color/colorAccent"
+                app:layout_flexBasisPercent="23%" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/equal"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                app:backgroundTint="@color/colorAccent"
+                app:layout_flexBasisPercent="100%" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
